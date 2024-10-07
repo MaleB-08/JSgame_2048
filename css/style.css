@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Helvetica;
+    color:black;
+}
+.container{
+  
+   
+    background-color:rgb(251, 248, 241);
+    width: 600px;
+    height: 750px;
+    border:5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}   
+
+#board{
+    
+    width: 500px;
+
+    background-color: rgb(205, 193, 181);
+    border:2px solid black;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;    
+}
+
+#board div{
+    width: 100px;
+    height: 100px;
+    background-color:	rgb(238, 228, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    margin: 10px;
+    
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+
+#reset{
+    padding:10px 15px;
+    color:black;
+    border-radius: 10px;
+    border:none;
+    width: 30%;
+    margin:0px 35%;
+    border:1px solid grey;
+
+}
+
+h1{
+    font-size:64px;
+}
+
+.score{
+    width: 60%;
+}
+.movesLabel,.scoreLabel{
+    padding: 10px 15px;
+    color: black;
+    border-radius: 10px;
+    background-color: rgb(238, 228, 218);
+    margin:10px;
+    width: 100%;
+}
+
+.moves,.HighScore{
+    display: flex;
+}
