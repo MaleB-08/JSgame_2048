@@ -16,7 +16,7 @@ jobs:
         run: npm install # Install dependencies for the Electron app
           
       - name: Build Electron app
-        run: npm run build-electron # Modify this command to your actual build script if different
+        run: npm run start # Modify this command to your actual build script if different
     
   cypress-run:
     runs-on: ubuntu-22.04
