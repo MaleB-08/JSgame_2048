@@ -10,20 +10,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # Set the required Node.js version  
+          node-version: '16' 
       
       - name: Install dependencies
-        run: npm install # Install dependencies for the Electron app
+        run: npm install 
           
       - name: Build Electron app
-        run: npm run start # Modify this command to your actual build script if different
+        run: npm run start 
     
   cypress-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
+        
       - name: Cypress run
         uses: cypress-io/github-action@v6
