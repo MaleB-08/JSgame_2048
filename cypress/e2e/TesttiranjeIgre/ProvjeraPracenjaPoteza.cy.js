@@ -5,7 +5,7 @@ describe('Testiranje igre', () => {
       cy.visit('index.html')
     })
 
-    it('Provjera Gameplay igre test', () => {
+    it('Provjera Pracenja Poteza', () => {
         cy.contains('Reset').click()
         cy.get('body').type('{downArrow}', {force: true})
         cy.get('body').type('{rightArrow}', {force: true})

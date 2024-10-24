@@ -5,12 +5,12 @@ describe('Testiranje igre', () => {
       cy.visit('index.html')
     })
 
-    it('Provjera Gameplay igre', () => {
+    it('Provjera Pracenja Rezultata', () => {
         cy.contains('Reset').click()
         cy.get('body').type('{downArrow}', {force: true})
         cy.get('body').type('{rightArrow}', {force: true})
         cy.get('body').type('{rightArrow}', {force: true})
         cy.get('body').type('{downArrow}', {force: true})
-        cy.get('#scorelabel').contains('8')
+        cy.get('#scorelabel').contains('12')
     })
 })
